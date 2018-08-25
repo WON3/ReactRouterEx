@@ -1,0 +1,29 @@
+.todo {
+    background:  gray;
+    padding:  20px;
+    width: 600px;
+    margin:  auto;
+    margin-bottom:  20px;
+    display: flex;
+    justify-content:  space-between;
+    border-radius:  4px;
+    color: white;
+}
+
+.todo button {
+    background: pink;
+    border:  none;
+    border-radius:  4px;
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+.Create-button{
+    background: rgb(41, 230, 41);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 42px;
+    margin-bottom: 30px;
+
+}
