@@ -19,7 +19,7 @@ class EditTodo extends Component {
     save(){
         const body = {
             id: this.props.match.params.id,
-            todo: this.state.todo,
+            description: this.state.todo,
             shouldComplete: false
         }
         axios.put(`/api/todo`, body)
@@ -30,6 +30,7 @@ class EditTodo extends Component {
     }
     
     render(){
+        console.log(this.props)
         return(
             <div>
                 <h1>Edit Todo</h1>

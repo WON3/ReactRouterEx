@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 const Todo = (props) =>{
+    console.log(props)
     return (
         <div className="todo">
             <p>{props.text}</p>

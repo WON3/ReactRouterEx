@@ -20,7 +20,8 @@ class CreateTodo extends Component {
 
     save(){
         const body = {
-            todo: this.state.todo,
+            user_id:1,
+            description: this.state.todo,
         }
         axios.post(`/api/todo`, body)
             .then((response)=>{

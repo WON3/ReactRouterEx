@@ -15,7 +15,7 @@ class Dashboard extends Component {
     }
 
     componentDidMount(){
-        axios.get(`/api/todo`)
+        axios.get(`/api/todo/1`)
             .then((response)=>{
                 this.setState({
                     todos: response.data
@@ -46,8 +46,16 @@ class Dashboard extends Component {
     }
 
     render(){
+        //{id: 2, todo: "Teach React Routing", isCompleted: false}
         let todos = this.state.todos.map((todo)=>{
-            return <Todo key={todo.id} id={todo.id} Delete={this.delete} IsComplete={todo.isCompleted} Complete={this.complete} text={todo.todo}/>
+            return <Todo 
+            key={todo.id} 
+            id={todo.id} 
+            Delete={this.delete} 
+            IsComplete={todo.is_completed} 
+            Complete={this.complete} 
+            text={todo.description}
+            />
         })
         return(
             <div>
